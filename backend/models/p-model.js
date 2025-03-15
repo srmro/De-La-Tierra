@@ -29,18 +29,41 @@ const pSchema = new mongoose.Schema({
         required: true
     },
     
-    planting: {
+    planting:[{
+        overview:{
+            type: String,
+            required: true
+        },
+      
+        space:{ 
+            type: String,
+            required: true
+        },
 
-        type: String,
-        required: true
-    },
+    }],
     
-    care:{
+    care:[{
 
-        type: String,
-        required: true
+        light:{
+            type: String,
+            required: true 
+        },
+        watering:{
+            type: String,
+            required: true
+        },
+        soil:{
+            type: String,
+            required: true
+        },
 
-    }
+        fertilizer:{
+            type: String,
+            required: true
+        },
+
+
+    }]
 
 },
 
@@ -51,3 +74,5 @@ const pSchema = new mongoose.Schema({
 );
 
 const Perennial = mongoose.model('Perennials', pSchema);
+
+export default Perennial;

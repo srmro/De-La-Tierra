@@ -1,10 +1,15 @@
 import express from 'express';
+import mongoose from 'mongoose';
+import aroute from './routes/a-route.js'
+import proute from './routes/p-routes.js'
 import { connectDB } from './config/db.js'; //importing the db connection file
 
 
 const app = express();
 
 app.use(express.json());
+app.use(aroute);
+app.use(proute);
 
 const PORT = 3570
 

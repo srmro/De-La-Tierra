@@ -1,6 +1,5 @@
 import { Router } from "express";
 import Annual from "../models/a-model.js"
-import { request } from "http";
 //annuals
 
 const router = Router();
@@ -39,3 +38,5 @@ router.post("/annuals", async (req, res) => {
 
 
 });
+
+export default router
