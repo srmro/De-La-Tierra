@@ -1,3 +1,4 @@
+import{ request, response }  from 'express';
 import { Router } from "express";
 import Annual from "../models/a-model.js"
 //annuals
@@ -33,9 +34,6 @@ router.post("/annuals", async (req, res) => {
         res.status(500).send({ msg: error.message });
 
     }
-
-
-
 
 });
 

@@ -1,9 +1,12 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import aroute from './routes/a-route.js'
-import proute from './routes/p-routes.js'
+import proute from './routes/p-route.js'
 import { connectDB } from './config/db.js'; //importing the db connection file
+import dotenv from "dotenv"
 
+
+dotenv.config();
 
 const app = express();
 
