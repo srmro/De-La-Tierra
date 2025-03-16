@@ -1,40 +1,41 @@
+import { Router, request, response } from "express";
+import Crop from "../models/crops-model.js";
 import mongoose from "mongoose";
-import { Router, request,response } from "express";
-import Post from "../models/posts-model";
 
-//posts
+//crops
+
 
 const router = Router();
 
-
-router.get("/posts", async (req, res) => {
+router.get("/crops", async (req, res) => {
     try {
 
-        const post = await Post.find()
-        res.status(200).send(post);
+        const crop = await Crop.find()
+        res.status(200).send(crop);
+
 
     } catch (error) {
 
         res.status(500).send({ msg: error.message });
 
     }
+
+
 });
 
-
-router.get("/posts/:id", async (req, res) => {
-
+router.get("/crops/:id", async (req, res) => {
 
     try {
 
-        const annual = await Post.findById();
+        const crop = await Crop.findById();
         const query = { _id: isObjectId(req.params.id) };
-        const result = await Post.findOne(query);
+        const result = await Crop.findOne(query);
         res.status(200).send(result);
+
 
     } catch (error) {
 
         if (!mongoose.Types.ObjectId.isValid(id)) {
-
             return res.status(400).json({ msg: "Invalid Id" });
         }
 
@@ -42,69 +43,66 @@ router.get("/posts/:id", async (req, res) => {
     }
 
 
+
 })
 
 
-
-router.post("/posts", async (req, res) => {
+router.post("/crops", async (req, res) => {
     try {
 
         const { body } = request
-        const post = await Post.create(req.body);
-        res.status(200).send(post)
+        const crop = await Crop.create(req.body);
+        res.status(200).send(crop);
 
     } catch (error) {
 
         res.status(500).send({ msg: error.message });
 
-
     }
-
 });
 
-router.put("/posts/:id", async (req, res) => {
+
+router.put("/crops/:id", async (req, res) => {
     const { id } = req.params;
-    const post = req.body;
+    const crop = req.body;
 
     if (!mongoose.Types.ObjectId.isValid(id)) {
         return res.status(400).json({ msg: "Invalid Id" });
+
     }
 
     try {
 
-        const updatedPost = await Post.findByIdAndUpdate(id, post, { new: true });
-        res.status(200).send(updatedPost);
+        const updatedCrop = await Crop.findByIdAndUpdate(id, crop, { new: true });
+        res.status(200).send(updatedCrop);
 
     } catch (error) {
 
         res.status(500).json({ msg: message.error });
 
-
     }
-
 
 });
 
 
-router.delete("/posts/:id", async (req, res) => {
+router.delete("/crops/:id", async (req, res) => {
 
     const { id } = req.params;
 
     if (!mongoose.Types.ObjectId.isValid(id)) {
-        return res.status(404).json({ msg: "Invalid Id" })
+        return res.status(200).json({ msg: "Invalid Id" });
     }
 
     try {
 
-        await Post.findByIdAndDelete(id);
+        await Crop.findByIdAndDelete(id);
         res.status(200).json({ msg: "Deleted" });
-
 
     } catch (error) {
 
-        res.status(500).send({ msg: error.message });
-
+        res.status(500).send({ msg: error.message })
     }
+
 
 });
 

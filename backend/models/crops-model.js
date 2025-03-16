@@ -1,7 +1,7 @@
+import mongoose  from "mongoose";
 
-import mongoose from "mongoose"; //creating a schema for perennials
+const cropsSchema = new mongoose.Schema({
 
-const pSchema = new mongoose.Schema({
 
     name: {
 
@@ -40,7 +40,6 @@ const pSchema = new mongoose.Schema({
     },
 
 
-
     light: {
         type: String,
         required: true
@@ -64,10 +63,10 @@ const pSchema = new mongoose.Schema({
 
     {
         timeStamp: true,
-    }
+    },
 
 );
 
-const Perennial = mongoose.model('Perennials', pSchema);
+const Crop = mongoose.model('Crop', cropsSchema);
 
-export default Perennial;
+export default Crop;

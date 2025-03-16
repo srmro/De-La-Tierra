@@ -2,6 +2,7 @@ import express from 'express';
 import mongoose from 'mongoose';
 import aroute from './routes/a-route.js'
 import proute from './routes/p-route.js'
+import crop from './routes/crop-route.js'
 import { connectDB } from './config/db.js'; //importing the db connection file
 import dotenv from "dotenv"
 
@@ -13,6 +14,7 @@ const app = express();
 app.use(express.json());
 app.use(aroute);
 app.use(proute);
+app.use(crop);
 
 const PORT = 3570
 
@@ -23,4 +25,4 @@ app.listen(PORT, () => {
 
 app.get("/", (req, res) => {
     res.status(200).json({message:"Connected to the server!"});
-} )
+} );
