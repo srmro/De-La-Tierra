@@ -1,6 +1,7 @@
 import Welcome from "../pages/Welcome"
 import About from "../pages/About"
 import SignUp from "../pages/SignUp"
+import LogIn from "../pages/LogIn"
 function App() {
 
 
@@ -8,7 +9,8 @@ function App() {
     <div>
     {/* <Welcome/> */}
     {/* <About/> */}
-    <SignUp/>
+    {/* <SignUp/> */}
+    <LogIn/>
     </div>
   )
 }
