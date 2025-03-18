@@ -3,6 +3,7 @@ import mongoose from 'mongoose';
 import aroute from './routes/a-route.js'
 import proute from './routes/p-route.js'
 import crop from './routes/crop-route.js'
+import user from './routes/users-route.js'
 import { connectDB } from './config/db.js'; //importing the db connection file
 import dotenv from "dotenv"
 
@@ -15,6 +16,7 @@ app.use(express.json());
 app.use(aroute);
 app.use(proute);
 app.use(crop);
+app.use(user);
 
 const PORT = 3570
 

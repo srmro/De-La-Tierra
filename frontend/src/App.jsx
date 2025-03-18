@@ -1,13 +1,11 @@
-import { useState } from 'react'
-
-
+import Welcome from "../pages/Welcome"
 function App() {
 
 
   return (
-    <>
-    hello
-    </>
+    <div>
+    <Welcome/>
+    </div>
   )
 }
 
