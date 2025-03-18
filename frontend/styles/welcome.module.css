@@ -1,0 +1,26 @@
+body{
+    background-image: url("../pictures/welcomeBackground.jpg");
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.mainHeader{
+    margin-top: 120px;
+    text-align: center;
+
+}
+
+.mainContainer{
+
+margin-top: 0px;
+
+}
+
+
+.welcomeImg{
+
+    width: 20%;
+
+
+
+}
