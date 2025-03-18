@@ -1,13 +1,17 @@
-body{
+/* body{
     background-image: url("../pictures/welcomeBackground.jpg");
     background-position: center;
     background-attachment: fixed;
-}
+    background-color: #d2d0c1 ;
+} */
 
 .mainHeader{
     margin-top: 120px;
     text-align: center;
-
+    background-image: url("../pictures/welcomeBackground.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #d2d0c1 ;
 }
 
 .mainContainer{

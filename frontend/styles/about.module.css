@@ -1,0 +1,46 @@
+.aboutContainer{
+
+text-align: center;
+display: flex;
+flex-direction: column;
+border: 2px solid #d2d0c1;
+align-items: center;
+background-color: #efebe8;
+
+
+}
+
+.aboutContainer h3{
+    margin: 10px ;
+
+}
+
+.infoContainer{
+margin: 20px 20px;
+border: 2px solid #a9b497;
+border-radius: 5px;
+width: 60%;
+max-width: 100%;
+padding: 25px;
+background-color: #fcfbfa
+;
+
+
+}
+
+.infoContainer h2{
+max-width: 100%;
+border: 2px none;
+padding: 10px;
+;
+
+
+}
+
+.infoImg{
+
+width: 20%;
+margin: 10px;
+
+
+}
