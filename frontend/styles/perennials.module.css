@@ -1,5 +1,4 @@
 .perennialContainer {
-    border: 1px solid black;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -17,8 +16,9 @@
 
 .topContainer {
     width: 50%;
-    border: 2px solid blue;
-
+    border: 2px solid #a9b497;
+    background-color: #fcfbfa;
+    border-radius: 5px;
 }
 
 .topContainer .careContainer {
@@ -30,7 +30,8 @@
 
 .careContainer {
     margin: 12px;
-    width: 40%;
-    border: 3px solid red;
-
+    width: 50%;
+    border: 3px solid #d2d0c1;
+    background-color: #fcfbfa;
+    border-radius: 5px;
 }

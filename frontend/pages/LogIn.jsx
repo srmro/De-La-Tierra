@@ -8,7 +8,8 @@ import login from '../styles/login.module.css'
 //will add a link on signup to take to signup page
 const LogIn = () => {
     return (
-        <div>
+        <div className={login.background}>
+            
             <Navbar />
         
                 <div className={login.topContainer}>

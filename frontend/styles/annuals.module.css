@@ -1,5 +1,4 @@
 .flowerContainer {
-    border: 1px solid black;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -7,7 +6,6 @@
     padding: 20px;
     align-items: center;
 
-    
 }
 
 .annual {
@@ -17,7 +15,9 @@
 
 .topContainer {
     width: 50%;
-    border: 2px solid blue;
+    border: 2px solid #a9b497;
+    background-color: #fcfbfa;
+    border-radius: 5px;
 
 }
 
@@ -26,11 +26,13 @@
     margin: 0 15px 30px;
     padding: 20px;
 
+
 }
 
 .careContainer {
     margin: 12px;
-    width: 40%;
-    border: 3px solid red;
-
+    width: 50%;
+    border: 3px solid #d2d0c1;
+    background-color: #fcfbfa;
+    border-radius: 5px;
 }

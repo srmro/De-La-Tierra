@@ -10,14 +10,19 @@
 .signupContainer input[type=text], input[type=email], 
 input[type=password]{
 
-    width: 14%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
+    width: 20%;
+    padding: 10px 15px;
+    margin: 8px 0;
     display: inline-block;
-    border: none;
-    background: #f1f1f1;
-    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
 
+}
+
+.logo{
+    border-radius: 35px;
+    width: 15%;
 }
 
 

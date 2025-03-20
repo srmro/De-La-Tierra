@@ -16,7 +16,7 @@ const SignUp = () => {
 
       <div>
         <div className={signup.topContainer}>
-          <img src={logo} alt='The webiste logo that displays a plant' className='logo' />
+          <img src={logo} alt='The webiste logo that displays a plant' className={signup.logo} />
           <h2>New User?</h2>
           <h4>Please fill this signup form to join the community!</h4>
         </div>

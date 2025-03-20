@@ -1,6 +1,6 @@
 .container{
 text-align: center;
-border: 1px solid black;
+border: none;
 display: flex;
 flex-direction: column;
 padding: 20px;
@@ -9,16 +9,18 @@ align-items: center;
 }
 
 .intro{
-border: 2px solid purple;
+border: none;
 padding: 12px ;
 width: 20%;
 margin-bottom: 10px;
 }
 
 .infoContainer {
-border: 3px solid blue;
+border: 3px solid #a9b497 ;
 margin: 0 15px 30px;
 width: 80%;
+background-color: #fcfbfa;
+border-radius: 5px;
 }
 
 .collage{
