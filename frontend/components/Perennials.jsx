@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import React from 'react';
-import perennials from '../styles/perennials.module.css'
+import perennial from '../styles/perennials.module.css'
+import Navbar from './Navbar';
 
 const Perennials = () => {
   const [perennials, setPerennials] = useState([]);
@@ -24,42 +25,42 @@ const Perennials = () => {
   return (
 
     <div>
-    {perennials.map((item) => (
-      <div className='perennialContainer'>
-        <div className='topContainer'>
-          <h2>{item.name}</h2>
-          <h5>Season: {item.season}</h5>
-          <img src={item.plant_img} />
-          <h3>Fun facts:</h3>
-          <p>{item.info}</p>
-          <div className='careContainer'>
-          <h3>Care Guide:</h3>
-          <ul>
-            <h4>Planting</h4> 
-            <li>{item.planting}</li>
-            <li>{item.space}</li>
-            <h4>Light</h4>
-            <li>{item.space}</li> 
-            <h4>Water</h4>
-            <li>{item.watering}</li> 
-            <h4>Soil and Fertilizer</h4>
-            <li>{item.soil}</li>
-            <li>{item.fertilizer}</li> 
+      <Navbar/>
+      {perennials.map((item) => (
+        <div className={perennial.perennialContainer}>
+          <div className={perennial.topContainer}>
+            <h2>{item.name}</h2>
+            <h5>Season: {item.season}</h5>
+            <img src={item.plant_img} className={perennial.perennial} />
+            <h3>Fun facts:</h3>
+            <p>{item.info}</p>
+          </div>
+          <div className={perennial.careContainer}>
+            <h3>Care Guide:</h3>
+         
+              <h4>Planting</h4>
+              <p>{item.planting}</p>
+              <p>{item.space}</p>
+              <h4>Light</h4>
+              <p>{item.light}</p>
+              <h4>Water</h4>
+              <p>{item.watering}</p>
+              <h4>Soil and Fertilizer</h4>
+              <p>{item.soil}</p>
+              <p>{item.fertilizer}</p>
 
-
-          </ul>
 
           </div>
         </div>
-      </div>
 
 
 
 
-    ))}
+
+      ))}
 
 
-  </div>
+    </div>
 
   )
 }

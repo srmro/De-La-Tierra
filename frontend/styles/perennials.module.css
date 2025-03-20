@@ -1,0 +1,36 @@
+.perennialContainer {
+    border: 1px solid black;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+
+    
+}
+
+.perennial {
+    width: 45%;
+
+}
+
+.topContainer {
+    width: 50%;
+    border: 2px solid blue;
+
+}
+
+.topContainer .careContainer {
+    column-gap: 30px ;
+    margin: 0 15px 30px;
+    padding: 20px;
+
+}
+
+.careContainer {
+    margin: 12px;
+    width: 40%;
+    border: 3px solid red;
+
+}

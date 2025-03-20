@@ -18,8 +18,8 @@ function App() {
       {/* <SignUp/> */}
       {/* <LogIn/> */}
       {/* <Annuals/> */}
-      <Perennial />
-      {/* <Crop/> */}
+      {/* <Perennial /> */}
+      <Crop/>
 
     </div>
   )
