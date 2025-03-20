@@ -1,13 +1,13 @@
-#De La Tierra!
+##De La Tierra!
 
 #The Idea
 This webiste involves development of both backend and frontend
 The purpose of the this full stack website is the idea of bringing together a community of plant enthusiast. The purpose is to gain ideas from one another or help diagnose a diseases, or lead a pathway for those who want to start caring for their first plant or garden.
 
-#What's been done
+##What's been done
 
 
-#Backend
+##Backend
 
 Use CRUD to POST,UPDATE,DELETE,GET data from the following routes
 
@@ -19,7 +19,7 @@ http://localhost:3570/crops
 Establish a connection to the MongoDB database to be able to use CRUD and see changes.
 
 
-#Frontend
+##Frontend
 
 -Created a Login/Signup form
 -An About page
@@ -33,7 +33,7 @@ Establish a connection to the MongoDB database to be able to use CRUD and see ch
 
 -Newsfeed page underconstruction
 
-#Routes/Link
+##Routes/Link
 http://localhost:5173/
 http://localhost:5173/about
 http://localhost:5173/starting-on-a-garden
