@@ -6,6 +6,7 @@ import LogIn from "../pages/LogIn"
 import Annuals from "../components/Annuals.jsx"
 import Perennial from "../components/Perennials.jsx"
 import Crop from "../components/Crops.jsx"
+import StartingOnAGarden from "../pages/StartingOnAGarden.jsx"
 
 
 function App() {
@@ -19,7 +20,8 @@ function App() {
       {/* <LogIn/> */}
       {/* <Annuals/> */}
       {/* <Perennial /> */}
-      <Crop/>
+      {/* <Crop/> */}
+      <StartingOnAGarden/>
 
     </div>
   )
