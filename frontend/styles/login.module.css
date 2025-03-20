@@ -1,0 +1,50 @@
+.topContainer{
+padding: 16px;
+text-align: center;
+
+}
+
+
+.loginContainer{
+
+text-align: center;
+padding: 20px;
+
+}
+
+
+.loginContainer input {
+
+    width: 20%;
+    padding: 10px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+
+}
+
+
+
+
+.logo{
+
+
+width: 15%;
+
+}
+
+
+.button{
+
+    background-color: #04AA6D;
+    color: white;
+    padding: 8px 10px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 8%;
+    border-radius: 5px;
+
+
+}

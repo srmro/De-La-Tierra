@@ -1,9 +1,12 @@
 import express from 'express';
+import cors from 'cors'
 import mongoose from 'mongoose';
 import aroute from './routes/a-route.js'
 import proute from './routes/p-route.js'
 import crop from './routes/crop-route.js'
 import user from './routes/users-route.js'
+
+
 import { connectDB } from './config/db.js'; //importing the db connection file
 import dotenv from "dotenv"
 
@@ -12,6 +15,7 @@ dotenv.config();
 
 const app = express();
 
+app.use(cors());
 app.use(express.json());
 app.use(aroute);
 app.use(proute);
