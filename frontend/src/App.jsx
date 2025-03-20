@@ -1,4 +1,5 @@
 import React from "react"
+import { Routes, Route } from "react-router-dom"
 import Welcome from "../pages/Welcome"
 import About from "../pages/About"
 import SignUp from "../pages/SignUp"
@@ -14,14 +15,7 @@ function App() {
 
   return (
     <div>
-      {/* <Welcome/> */}
-      {/* <About/> */}
-      {/* <SignUp/> */}
-      {/* <LogIn/> */}
-      {/* <Annuals/> */}
-      {/* <Perennial /> */}
-      {/* <Crop/> */}
-      <StartingOnAGarden/>
+ 
 
     </div>
   )

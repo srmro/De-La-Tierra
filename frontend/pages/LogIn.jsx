@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import Navbar from '../components/Navbar'
 import logo from '../pictures/logo.png'
@@ -13,7 +14,7 @@ const LogIn = () => {
                 <div className={login.topContainer}>
                     <img src={logo} alt='The webiste logo that displays a plant' className={login.logo} />
                     <h2>Welcome Back!</h2>
-                    <h4>Don't have an account? Sign up!</h4>
+                    <h4>Don't have an account? <Link to={"/signup"}>Sign up!</Link></h4>
                 </div>
                 <div className={login.loginContainer}>
                 <form>

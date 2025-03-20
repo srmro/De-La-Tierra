@@ -10,22 +10,24 @@ const Navbar = () => {
   return (
     <nav className={NavBar.navbar}>
       <div className={NavBar.navImage}>
+        <Link to={"/"}>
         <img src={logo} alt='website logo' className={NavBar.logo} />
+        </Link>
       </div>
 
       <div className={NavBar.navbarCenter}>
         <ul className={NavBar.navLinks}>
-          <li><a>Home</a></li>
-          <li><a>About</a></li>
-          <li><a>Newsfeed</a></li>
-          <li><a>Starting on a Garden</a></li>
+          <li><Link to={"/"}>Home</Link></li>
+          <li><Link to={"/about"}>About</Link></li>
+          <li><Link to={"/newsfeed"}>Newsfeed</Link></li>
+          <li><Link to={"/starting-on-a-garden"}>Starting on a Garden</Link></li>
         </ul>
       </div>
 
       <div className={NavBar.navbarRight}>
         <ul className={NavBar.navLinks}>
-          <li><a>Sign up</a></li>
-          <li><a>Log In</a></li>
+          <li><Link to ={"/signup"}>Sign up</Link></li>
+          <li><Link to ={"/login"}>Log In</Link></li>
         </ul>
       </div>
 
