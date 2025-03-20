@@ -25,6 +25,8 @@ const Perennials = () => {
   return (
 
     <div>
+      <title>🌱Perennials</title>
+
       <Navbar/>
       {perennials.map((item) => (
         <div className={perennial.perennialContainer}>

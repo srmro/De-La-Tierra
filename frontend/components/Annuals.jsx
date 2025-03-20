@@ -25,6 +25,7 @@ const Annuals = () => {
 
   return (
     <div>
+      <title>Annuals🌼</title>
       <Navbar/>
       {annuals.map((item) => (
         <div className={annual.flowerContainer}>

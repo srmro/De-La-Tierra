@@ -9,8 +9,9 @@ import login from '../styles/login.module.css'
 const LogIn = () => {
     return (
         <div className={login.background}>
-            
+            <title>Login!</title>
             <Navbar />
+
         
                 <div className={login.topContainer}>
                     <img src={logo} alt='The webiste logo that displays a plant' className={login.logo} />
@@ -21,11 +22,14 @@ const LogIn = () => {
                 <form>
                     <label>Enter email: </label>
                     <input type='email'
-                    placeholder='example@mail.com' />
+                    placeholder='example@mail.com'
+                    name='email' />
                     <br />
                     <label>Enter password: </label>
                     <input type='password'
-                    placeholder='Enter Password' />
+                    placeholder='Enter Password'
+                    name='password' />
+                
                     <br />
                     <button type='submit' className={login.button}>Log In</button>
 

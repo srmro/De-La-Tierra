@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom'
 const StartingOnAGarden = () => {
   return (
     <div>
+      <title>Getting Started🪏</title>
       <Navbar />
       <div className={starting.container}>
         <div className={starting.intro}>

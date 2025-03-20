@@ -26,6 +26,7 @@ const Crops = () => {
 
   return (
     <div>
+      <title>Crops🍉</title>
       <Navbar/>
       {crops.map((item) => (
         <div className={crop.cropContainer}>

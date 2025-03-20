@@ -7,6 +7,7 @@ import contruct from '../pictures/under-construction.gif'
 const Newsfeed = () => {
   return (
     <div>
+      <title>Newsfeed</title>
         <Navbar/>
         <div className={contruct.container}>
 <h1>Sorry! This page is still in development! 🚧</h1>

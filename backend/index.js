@@ -5,6 +5,7 @@ import aroute from './routes/a-route.js'
 import proute from './routes/p-route.js'
 import crop from './routes/crop-route.js'
 import user from './routes/users-route.js'
+// import signup from './routes/signup-route.js'
 
 
 import { connectDB } from './config/db.js'; //importing the db connection file
@@ -21,6 +22,7 @@ app.use(aroute);
 app.use(proute);
 app.use(crop);
 app.use(user);
+// app.use(signup);
 
 const PORT = 3570
 
